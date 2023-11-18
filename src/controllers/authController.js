@@ -3,7 +3,6 @@ import constants from '../utils/constants.js';
 import jwtUtils from '../utils/jwtUtils.js';
 
 const registerPublisher = async (req, res) => {
-    console.log(req.body);
     try {
         const { email } = req.body;
         const existingPublisher = await EventPublisher.findOne({ email });

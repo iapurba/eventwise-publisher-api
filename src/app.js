@@ -17,6 +17,7 @@ connectDB();
 
 // Publisher APIs
 app.use('/api/publisher/auth', routes.authRoutes);
+app.use('/api/publisher/events', routes.eventRoutes);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
